@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "662385079444",
+    "firebase_url": "https://loja-virtual-sj-default-rtdb.firebaseio.com",
+    "project_id": "loja-virtual-sj",
+    "storage_bucket": "loja-virtual-sj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662385079444:android:0edd7e84f7b1db13437081",
+        "android_client_info": {
+          "package_name": "br.com.mvtelecom.loja_virtual_sj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662385079444-i3gnpfqhq3drskrhvheh8bulrmsaqj6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLBfz7b6Ze-i2ruiRG17axLeVUZ9QlPgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662385079444-i3gnpfqhq3drskrhvheh8bulrmsaqj6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
