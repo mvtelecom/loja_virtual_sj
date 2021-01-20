@@ -18,6 +18,15 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Entrar'), //titulo da appbar
         centerTitle: true, // centralizar titulo
+        actions: <Widget>[
+          FlatButton(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('/signup');
+            },
+            textColor: Colors.white,
+            child: const Text('CRIAR CONTA', style: TextStyle(fontSize: 14)),
+          )
+        ],
       ),
       body: Center(
         // corpo fica no centro
@@ -83,20 +92,23 @@ class LoginScreen extends StatelessWidget {
                                       ));
                                     },
                                     onSucess: () {
-                                      // TODO: FECHAR TELA DE LOGIN
+                                      Navigator.of(context).pop();
                                     });
                               },
                         color: Theme.of(context).primaryColor,
-                        disabledColor: Theme.of(context).primaryColor.withAlpha(100),
+                        disabledColor:
+                            Theme.of(context).primaryColor.withAlpha(100),
                         textColor: Colors.white,
-                        child: userManger.loading ? CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation(Colors.white),
-                        ) :
-                        const Text(
-                          'Entrar',
-                          style: TextStyle(fontSize: 18 //tamanho da fonte
+                        child: userManger.loading
+                            ? CircularProgressIndicator(
+                                valueColor:
+                                    AlwaysStoppedAnimation(Colors.white),
+                              )
+                            : const Text(
+                                'Entrar',
+                                style: TextStyle(fontSize: 18 //tamanho da fonte
+                                    ),
                               ),
-                        ),
                       ),
                     )
                   ],
